@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayanth's B'Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1e2623;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border: 5px solid transparent;
+            border-radius: 3%;
+            border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+            animation: rainbow 3s linear infinite;
+        }
+        @keyframes rainbow {
+         0% {
+             border-image-source: linear-gradient(0deg, red, orange, yellow, green, blue, indigo, violet);
+         }
+         25% {
+             border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+         }
+         50% {
+             border-image-source: linear-gradient(180deg, red, orange, yellow, green, blue, indigo, violet);
+         }
+         75% {
+             border-image-source: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+         }
+         100% {
+             border-image-source: linear-gradient(360deg, red, orange, yellow, green, blue, indigo, violet);
+         }
+     }
+          .section {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: var(--delay);
+        }
+
+        .section img {
+            width: 20%;
+            height: 20%;
+            background-color: white; /* Placeholder for image */
+            margin-right: 20px;
+            border: 2px solid rgb(96, 208, 242);
+        }
+
+        .letter {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 3em;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .content {
+            font-size: 18px;
+            font-family:'Times New Roman', Times, serif;
+            color: white;
+            max-width: 400px;
+            white-space: nowrap; /* Prevents wrapping */
+            overflow: hidden; /* Hides text that overflows the container */
+            border-right: 3px solid rgb(99, 200, 150); /* Blinking cursor */
+            width: 0; /* Hidden initially */
+            animation: typing 10s steps(50, end) forwards, blink 0.75s step-end infinite;
+            animation-delay: var(--delay );
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from { border-right-color: rgb(152, 117, 228); }
+            to { border-right-color: transparent; }
+        }
+
+        .audio-player {
+            display: none; /* Hidden initially */
+            margin-left: 20px;
+            animation: showPlayer 4s forwards;
+            animation-delay: var(--delay-audio); /* Delay based on paragraph typing time */
+        }
+
+        @keyframes showPlayer {
+            to { display: block; }
+        }
+        .letter{
+            margin-left: 5%;
+            margin-right: 20%;
+        }
+        img{
+            margin-bottom: 4%;
+        }
+        .image4{
+            width: 20%;
+            height: 40%;
+        }
+        .image1{    
+        position: relative;
+        display: inline-block;
+        }
+
+.image1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid red; /* Red border color */
+    border-radius: 10px; /* Optional: makes the border corners rounded */
+    animation: borderAnimation 4s linear infinite; /* Adjust duration as needed */
+}
+
+.animated-image1 {
+    display: block;
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+}
+
+@keyframes borderAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    75% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.header{
+    font-family: Yellowtail;
+    color: #f09143;
+}
+.letter1{
+    margin-right: 18%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: white;
+}
+#background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.2; /* Adjust opacity for better readability of foreground content */
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="FREE NO COPYRIGHT STUNNING 2K MIDNIGHT BLUE STORM CLOUDS VIOLENT LIGHTNING FLASHES STOCK FOOTAGE.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="sky"></div>
+    <div class="lightning"></div>
+    <h1 class="header">ⒽⒶⓅⓅⓎ Ⓑ'ⒹⒶⓎ ⒸⒽⒾⓃⓃⓊ 
+    </h1>
+
+    <!-- J Section -->
+    <div class="section" style="--delay: 5s;">
+        <div class="letter">Ⓙ</div>
+        <img class="image1"src="IMG-20240906-WA0007.jpg">
+        <div class="content" style="animation-delay: 6s;">"Happy Birthday to my amazing brother,<br> who embodies courage and strength in <br>everything he does.<br> 
+            You are not only a pillar of support for me<br> but also a beacon of bravery to <br>everyone around you.<br> 
+            Your ability to face challenges head-on and<br> encourage others to stand tall<br> through their own struggles is truly remarkable.<br> 
+            You inspire us all to be stronger, braver, and <br>better each day.<br> 
+            On your special day, I celebrate the incredible <br>person you are and wish you <br>endless happiness and success.<br> 
+            Keep shining, my brave brother!"</div>
+        <h3 style="color: white; margin-left: 20px;">Joy</h3>
+        <audio class="audio-player" controls autoplay style="--delay-audio: 6s;">
+            <source src="WhatsApp Audio 2024-10-31 at 15.44.51_842a4203.mp3">
+        </audio>
+    </div>
+        <hr>
+    <!-- A Section -->
+    <div class="section" style="--delay: 21s;">
+        <div class="letter">𝓐</div>
+        <img src="IMG-20241020-WA0004.jpg">
+        <div class="content" style="animation-delay:22s;">"His attitude is so magnetic, even gravity can't<br> keep people away."<br>
+            "He walks into a room, and suddenly,<br> the atmosphere changes."<br>
+            "Everyone may have a vibe, but his <br>attitude is the blueprint."<br>
+            "He doesnt chase after the crowd <br>the crowd follows his lead."<br>
+            "His confidence doesnt speak; it roars."<br>
+            "Some lead by example, but he leads <br> with attitude, and everyone follows."<br>
+            "When he walks in, even doubts sit down<br> and pay attention."</div>
+        <h3 style="color: white; margin-left: 20px;">Attitude</h3>
+        <audio class="audio-player" controls autoplay style="--delay-audio: 28s;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+        <hr>
+    <!-- Y Section -->
+    <div class="section" style="--delay:37s;">
+        <div class="letter">Ў</div>
+        <img src="IMG-20241020-WA0006.jpg">
+        <div class="content" style="animation-delay: 37.5s;">Your spirit radiates positivity and inspires<br>everyone around you especially me.<br>You have taught me that being youthful is not<br>just about being young.<br>its about staying open to <br>new ideas, daring to dream<br>and approaching life with wonder.<br>That fire in you keeps you vibrant, enthusiastic, <br>and always growing, and I know <br>its what will continue to make you unstoppable.</div>
+        <h3 style="color: white; margin-left: 20px;">Youthful spirit</h3>
+        <audio class="audio-player" controls style="--delay-audio: 15s;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+        <hr>
+    <!-- A Section -->
+    <div class="section" style="--delay: 52s;">
+        <div class="letter1">【A】</div>
+        <img class="image4" src="IMG-20240906-WA0004.jpg">
+        <div class="content" style="animation-delay: 52.5s;">Your strong desire and determination to achieve<br> your goals truly inspire me.<br>You set high standards for yourself and work<br>tirelessly to reach them whether in your career,<br> education, or personal life.<br>I admire that about you, and<br> I know it will take you far in life.</div>
+        <h3 style="color: white; margin-left: 20px;"> Ambitious</h3>
+        <audio class="audio-player" controls style="--delay-audio: 20s;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+        <hr>
+    <!-- N Section -->
+    <div class="section" style="--delay:67s;">
+        <div class="letter">🅽</div>
+        <img src="IMG-20240904-WA0007.jpg" style="animation-delay:67.5s;">
+        <div class="content">Your noble character inspires me and<br>those around you.<br> Its a rare quality, and<br>I am proud to have you as my brother.<br>You consistently show honesty, integrity,<br> and generosity in everything you do.<br>Keep being the amazing person you are!</div>
+        <h3 style="color: white; margin-left: 20px;">Noble</h3>
+        <audio class="audio-player" controls style="--delay-audio: 25s;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+        <hr>
+    <!-- T Section -->
+    <div class="section" style="--delay: 83s;">
+        <div class="letter">Ƭ</div>
+        <img src="WhatsApp Image 2024-10-31 at 12.12.52_71c83e68.jpg" style="animation-delay: 83.5s;">
+        <div class="content">On this special day, we come together<br>to celebrate my extraordinary brother,<br>a true embodiment of talent, strength, and inspiration.<br>Your courage knows no bounds, and<br>your natural abilities have left a mark<br>on everyone fortunate enough to know you. </div>
+        <h3 style="color: white; margin-left: 20px;">Talented</h3>
+        <audio class="audio-player" controls style="--delay-audio: 30s;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+        <hr>
+    <!-- H Section -->
+    <div class="section" style="--delay:99s;">
+        <div class="letter">Ĥ</div>
+        <img src="IMG-20241020-WA0005.jpg" style="animation-delay: 99.5s;">
+        <div class="content">Your helpful nature reflects your kindness and<br>empathy,making you someone everyone can rely on.<br>I appreciate all that you do and want you<br>to know how much it means to me. <br>Thank you for being such an incredible brother!
+
+        </div>
+        <h3 style="color: white; margin-left: 20px;">Helpful</h3>
+        <audio class="audio-player" controls style="--delay-audio: 35s;">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <hr class="line">
+    <div class="section" style="--delay:117s;">
+        <h3 class="letter">DONE BY</h3>
+        <img class="last-image" src="pixelcut-export (1).jpeg" style="animation-delay: 115s;">
+    </div>
+    
+    <script>
+        // Auto-scroll function
+        const sections = document.querySelectorAll('.section');
+        let currentSectionIndex = 0;
+    
+        function scrollToNextSection() {
+            if (currentSectionIndex < sections.length) {
+                const section = sections[currentSectionIndex];
+                section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                currentSectionIndex++;
+                setTimeout(scrollToNextSection, 15000); // Adjust time for next scroll
+            }
+        }
+    
+        // Start scrolling after initial delay
+        setTimeout(scrollToNextSection, 7000); // Initial delay for first scroll
+    
+        // Show last image after 20 seconds
+        setTimeout(() => {
+            const lastImage = document.querySelector('.last-image'); // Assuming 'last-image' class for target image
+            if (lastImage) {
+                lastImage.style.opacity = '1'; // Make the image visible
+                lastImage.style.transition = 'opacity 1s ease-in-out'; // Smooth fade-in
+            }
+        }, 20000); // 20 seconds delay
+    </script>
+        
+
+</body>
+</html>
